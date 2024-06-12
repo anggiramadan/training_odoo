@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="capri.list">
+      <field name="name">capri list</field>
+      <field name="model">capri.capri</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="capri.action_window">
+      <field name="name">capri window</field>
+      <field name="res_model">capri.capri</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="capri.action_server">
+      <field name="name">capri server</field>
+      <field name="model_id" ref="model_capri_capri"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="capri" id="capri.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="capri.menu_1" parent="capri.menu_root"/>
+    <menuitem name="Menu 2" id="capri.menu_2" parent="capri.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="capri.menu_1_list" parent="capri.menu_1"
+              action="capri.action_window"/>
+    <menuitem name="Server to list" id="capri" parent="capri.menu_2"
+              action="capri.action_server"/>
+-->
+  </data>
+</odoo>

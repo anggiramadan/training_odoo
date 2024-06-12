@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "Training Odoo",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "python": "E:\\Training\\training\\Scripts\\python", // cari dengan which python3
+            "program": "E:\\Odoo\\server\\odoo-bin",
+            "args": [
+                "--config=E:\\Training\\training.conf",
+                "--dev=xml",
+                // "--database=training",
+                // "--update=nok_hr_payroll",
+                // "-i base"
+            ]
+        },
+    ]
+}
